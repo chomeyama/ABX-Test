@@ -30,13 +30,5 @@ find wav/set8 -name "*.wav" | grep "method0" > wav/set8/method0.list
 find wav/set8 -name "*.wav" | grep "method1" > wav/set8/method1.list
 find wav/set8 -name "*.wav" | grep "method2" > wav/set8/method2.list
 find wav/set8 -name "*.wav" | grep "method3" > wav/set8/method3.list
-find wav/set9 -name "*.wav" | grep "method0" > wav/set9/method0.list
-find wav/set9 -name "*.wav" | grep "method1" > wav/set9/method1.list
-find wav/set9 -name "*.wav" | grep "method2" > wav/set9/method2.list
-find wav/set9 -name "*.wav" | grep "method3" > wav/set9/method3.list
-find wav/set10 -name "*.wav" | grep "method0" > wav/set10/method0.list
-find wav/set10 -name "*.wav" | grep "method1" > wav/set10/method1.list
-find wav/set10 -name "*.wav" | grep "method2" > wav/set10/method2.list
-find wav/set10 -name "*.wav" | grep "method3" > wav/set10/method3.list
 
 
