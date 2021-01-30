@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Preference Test</title>
+    </head>
+
+    <body>
+
+        <!-- 注意書きなど -->
+        <div style="border:1px solid #000000; padding: 10px; border-radius: 0px; background: ##ffffff;">
+            <p>
+                <h1>Preference Test</h1>
+
+                Thank you for your cooperation in my experiment.</br>
+                This experiment is ABX test.</br>
+                I will explain the experimental procedure.
+
+                <h2>Experimental Procedure</h2>
+                <ol>
+                    <li>Enter your name and select the set list number from 1 to 10.</li>
+                    <li>Press "Start Experiment" button.</li>
+                    <li>First, listen to the voice at the top (let's call it VoiceX).</br>
+                        Next, listen to the two voices below VoiceX and choose the one that you think is closer to VoiceX.</li>
+                    <li>Please pay attention to the pitch of the voices when making choices. </li>
+                    <li>Press "next" button and start next evaluation.</li>
+                    <li>When you finish this experiment, press "finish" button and download the result.<br>
+                        Send it to slack or the following email address.</li>
+                    <li>Email address: yoneyama.reo@g.sp.m.is.nagoya-u.ac.jp</font></li>
+                </ol>
+
+                <h2>Notes</h2>
+                <ul>
+                    <li>This experiment takes about 15 minutes.</li>
+                    <li>Please do not update the page during this experiment.</li>
+                    <li>Please use headphones for this experiment.</li>
+                </ul>
+            </p>
+        </div>
+
+        <script type="text/javascript" src="preference.js"></script>
+
+        <div id="Display1">
+            <p> Your name: <br>
+            <input type="text" id="name" value=""></p>
+            <p> Setlist number: <br>
+            <label><input type="radio" name="set" id="number" value="1">1</label><br>
+            <label><input type="radio" name="set" id="number" value="2">2</label><br>
+            <label><input type="radio" name="set" id="number" value="3">3</label><br>
+            <label><input type="radio" name="set" id="number" value="4">4</label><br>
+            <label><input type="radio" name="set" id="number" value="5">5</label><br>
+            <label><input type="radio" name="set" id="number" value="6">6</label><br>
+            <label><input type="radio" name="set" id="number" value="7">7</label><br>
+            <label><input type="radio" name="set" id="number" value="8">8</label><br>
+            <label><input type="radio" name="set" id="number" value="9">9</label><br>
+            <label><input type="radio" name="set" id="number" value="10">10</label><br>
+
+            <p>
+            <button id="next1" onclick="start_experiment()">next</button>
+            </p>
+        </div>
+
+
+        <div id="Display2" style="display:none;">
+        <!-- 注意書きなど <body onload="init()"> -->
+            <p id="page"></p>
+            <p id="audio_x"></p>
+            <p id="audio_a"></p>
+            <p id="audio_b"></p>
+            <p>
+            <label><input type="radio" name="eval" onclick="evaluation()">A is closer to X</label><br>
+            <label><input type="radio" name="eval" onclick="evaluation()">B is closer to X</label><br>
+        </p>
+
+        <p>
+        <button id="prev" onclick="prev()">prev</button>
+        <button id="next2" onclick="next()">next</button>
+        <button id="finish" onclick="finish()">finish</button>
+        </p>
+
+
+    </body>
+
+</html>
