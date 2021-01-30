@@ -18,12 +18,15 @@ function invalid_enter(){
 
 // start experiment
 function start_experiment(){
+    alert("start experiment.");
     // get user name
     var name = document.getElementById("name").value.replace(" ", "_");
     if(name == ""){
         alert("Please enter your name.");
         return false;
     }
+
+    alert("start experiment2.");
 
     // get setlist number
     var set_num = "0"
@@ -33,10 +36,15 @@ function start_experiment(){
             set_num = number[i].value;
         }
     }
+
+    alert("start experiment3.");
+
     if(set_num == "0"){
         alert("Please press the setlist number button.");
         return false;
     }
+
+    alert("start experiment4.");
 
     // convert display
     Display()
