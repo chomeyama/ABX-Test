@@ -163,7 +163,7 @@ function setButton(){
 function evaluation(){
     for(var i=0; i<eval.length; i++){
         if(eval[i].checked){
-            scores[n] = i+1;
+            scores[n] = i;
         }
     }
     setButton();
@@ -172,8 +172,8 @@ function evaluation(){
 function exportCSV(){
     var csvData = "";
     for(var i=0; i<file_list.length; i++){
-        csvData += "" + file_list[i][0] + ","
-        + file_list[i][1] + ","
+        csvData += "" + file_list[i][1] + ","
+        + file_list[i][2] + ","
         + scores[i] + "\r\n";
     }
 
