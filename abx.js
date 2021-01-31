@@ -163,7 +163,7 @@ function setButton(){
 function evaluation(){
     for(var i=0; i<eval.length; i++){
         if(eval[i].checked){
-            scores[n] = i;
+            scores[n] = i+1;
         }
     }
     setButton();
